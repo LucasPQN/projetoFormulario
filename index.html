@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projetoFormulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="tittle">Preencha o formulário abaixo</h1>
+        <blockquote id="description">Obridado pela colaboração</blockquote> 
+    </header>
+    <form id="survey-form">
+        <div id="text">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Coloque seu nome" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Coloque seu email" required>
+            </div>
+            <div>
+                <label for="number" id="number">Idade (opcional)</label>
+                <input type="number" name="number" id="number" placeholder="Idade" required>
+            </div>                                
+        </div>
+         
+        <div id="dropdownd">
+            <p id="dropdown">Qual sua fruta favorita?</p>
+            <select name="dropdown" id="dropdown1">
+                <option disabled selected value>Selecione alguma fruta</option>
+                <option value="maca">Maçã</option>
+                <option value="banana">Banana</option>
+                <option value="pera">Pêra</option>
+                <option value="limao">Limão</option>
+            </select>
+        </div>        
+    
+        <div id="radio">
+            <p>Acha que frustas fazem parte de uma boa saúde?</p>
+            <label>
+                <input type="radio" name="rad" id="sim" value="Sim" checked>
+                Sim 
+            </label>
+            <label>
+                <input type="radio" name="rad" id="nao" value="nao">
+                Não
+            </label>
+            <label>
+                <input type="radio" name="rad" id="claro" value="claro">
+                claro
+            </label>
+        </div>
+
+        <div id="dropdown">
+            <p id="dropdown">Qual seu legume favorito?</p>
+            <select name="dropdown" id="dropdown2">
+                <option disabled selected value>Selecione algum legume</option>
+                <option value="pepino">Pepino</option>
+                <option value="alface">Alface</option>
+                <option value="pimentao">Pimentão</option>
+                <option value="couve">Couve</option>
+            </select>
+        </div>
+        
+        <div id="checkbox">
+            <p>Na sua opnião quais desses alimentos são prejudiciais a saúde?</p>           
+            <div id="biscoito">
+                <input type="checkbox" name="biscoito" id="biscoito">
+                <label for="biscoito">Biscoito recheado</label>
+            </div>    
+            <div id="salgadinhos">
+                <input type="checkbox" name="salgadinhos" id="salgadinhos">
+                <label for="salgadinhos">Salgadinhos</label>
+            </div>            
+            <div id="frituras">
+                <input type="checkbox" name="frituras" id="frituras">
+                <label for="frituras">Frituras</label>
+            </div>
+            <div id="churrasco">
+                <input type="checkbox" name="churrasco" id="churrasco">
+                <label for="churrasco">Churrasco</label>
+            </div>            
+            <div id="margarina">
+                <input type="checkbox" name="margarina" id="margarina">
+                <label for="margarina">Margarina</label>
+            </div>   
+            <div id="acucar">
+                <input type="checkbox" name="acucar" id="acucar">
+                <label for="acucar">Açucar</label>
+            </div>
+        </div>
+        
+        <div id="suggestions">
+            <p>Alguma sugestão?</p>
+            <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Adcione seu comentário aqui..."></textarea>
+        </div>
+        
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+</body>
+</html>
